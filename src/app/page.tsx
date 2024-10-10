@@ -293,7 +293,7 @@ export default async function Home() {
             Engineering and Product Leader
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Keith, a <strong>software engineer and product leader</strong> based in Berkeley, California.<br />  I have a passion for mentoring teams, driving technical excellence, and delivering innovative solutions in software development that align with business goals.
+            I’m Keith, a <strong>software engineer and product leader</strong> based in Berkeley, California.<br />  I have a passion for mentoring teams, driving technical excellence, and delivering innovative solutions that solve real problems.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
