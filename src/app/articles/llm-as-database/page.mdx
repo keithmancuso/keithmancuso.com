@@ -1,0 +1,42 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+import tvGPT from './tvGPT.png'
+
+export const article = {
+  author: 'Keith Mancuso',
+  date: '2024-10-03',
+  title: 'Can an LLM be used in place of a database?',
+  description: 'Experimenting with the OpenAI Assistant API.',
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+I've been experimenting with LLMs by building an app designed to help you decide what to watch tonight. Originally, I saw it as a way to update and share a simple database of shows through conversation rather than clicks. My first approach used a simple RAG (Retrieve Augmented Generation) approach, where I shared data with the model and used function calling to perform CRUD tasks on the show list in Notion.
+
+The initial version was a custom GPT that updated my existing Notion database of shows, categorizing what I was watching, wanted to watch next, and what I'd already finished. This worked well, but when I tried to make it publicly accessible, I hit roadblocks with authentication. OAuth worked, but it was clunky—I had to reauthorize every time I came back. It felt like there should be a smoother way.
+
+Then I discovered [OpenAI's Assistant API](https://platform.openai.com/docs/assistants/overview), which shifted my approach entirely. Unlike the normal chat completions API, the Assistant API introduces the concept of threads:
+
+> Assistants can access **persistent Threads**. Threads simplify AI application development by storing message history and truncating it when the conversation gets too long for the model’s context length. You create a Thread once, and simply append Messages to it as your users reply.
+
+This idea resonated with me, and I haven't seen many in the community talking about its potential. OpenAI's latest model has a context window capable of storing the equivalent of a 300-page book—enough space for an entire personal memoir!
+
+So, what if I built a version of Watch Tonight that didn't have a database at all? What if each user had just one thread, and the LLM handled everything on its own? Could it do a good job of remembering my requests, my preferences, and all the shows I mentioned?
+
+Before diving into building, I decided to test this out in ChatGPT, using a standard chat thread to see how well it could keep track over several days. It wasn't a comprehensive test, but I found that as long as I stayed in the same thread, the LLM did a surprisingly good job of retaining important context—enough for an app like this to work well.
+
+<Image src={tvGPT} alt="" />
+
+How far can I take this? How well can these models manage this kind of persistent memory on their own? Are some models better than others at this?
+
+I want to build a new version of Watch Tonight that stores everything within the context window while using [Structured Output](https://openai.com/index/introducing-structured-outputs-in-the-api/). Instead of just giving me a bulleted list, the LLM could generate a UI for an app similar to one of my old favorites, [Sofa](https://openai.com/index/introducing-structured-outputs-in-the-api/).
+
+There are a lot of challenges with this approach, and I don’t expect it to be more than a proof of concept, but I’m excited to see what it can do. Could it keep track of show lists, generate recommendations, and integrate features like thumbs-up/thumbs-down buttons to improve over time? Could I combine AI scraping tools or use the TVDB API to keep it updated with the latest info?
+
+If this concept pans out, it could pave the way for other personalized recommendation engines—e-commerce, music, books—without the complexity of structuring the data manually. Why go through all that effort when you could just dump it in an LLM and let it do the heavy lifting?
+
+I'll keep sharing my findings as I go. This journey has just begun, and I'm eager to see where it leads.
