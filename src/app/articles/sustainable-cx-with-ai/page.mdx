@@ -1,0 +1,34 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Keith Mancuso',
+  date: '2024-08-07',
+  title: 'Achieving Sustainable Customer Service Through AI at Casper',
+  description:
+    "Discover how Casper leveraged AI to enhance customer service, improve customer satisfaction, and reduce costs by collaborating with Sierra for a seamless, sustainable support solution.",
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+Like many e-commerce companies, Casper is striving to achieve profitability, and a significant part of my job is to leverage technology to make that a reality. Our recent collaboration with Sierra is a great example of how we’re making strides in that direction.
+## Early Attempts
+Previously, Casper used Salesforce alongside a team from ~[RDI](https://rdicorp.com/)~ to power online chat on Casper.com. We experimented with Salesforce’s Einstein offerings and even managed to launch a few features, but we faced constant frustration. Even straightforward tasks—like displaying a customer satisfaction (CSAT) survey at the end of a chat—took weeks of effort, multiple engineers, and countless support tickets. Eventually, we learned that achieving this simple outcome required yet another add-on purchase! The worst part? Even after purchasing the add-on, it still didn’t work, and Salesforce support was unable to help.
+It was time for a fresh approach. I’d seen a lot of buzz online about how large language models (LLMs) were revolutionizing customer service. One article that particularly caught my attention was from Klarna, which stated that their AI agent managed two-thirds of all chats in its first month—a promising signal that this technology was ready for prime time (~[source](https://www.klarna.com/international/press/klarna-ai-assistant-handles-two-thirds-of-customer-service-chats-in-its-first-month/)~). The more I researched, the more convinced I became that AI-driven customer service wasn’t a distant dream, but something we could implement today.
+## Exploring Options
+We evaluated several options, but ultimately narrowed it down to two main contenders: Intercom and Sierra. Intercom had a more mature toolset, but adopting it meant not only using their AI agent but also migrating all human-powered chats and calls to their system—a daunting transition that the team wasn’t ready for.
+Sierra, on the other hand, offered a more seamless solution. It provided a drop-in bot that could escalate chats to our existing Salesforce chat system whenever a human touch was needed. Even more impressive, Sierra supported function calling into Salesforce to perform actions that even Salesforce’s native tools couldn’t handle effectively.
+## Seamless Setup
+Setting up Sierra was remarkably simple. We loaded the data from our training guides and knowledge base, and Sierra’s bot was ready to go. It used retrieval-augmented generation (RAG) to search through our knowledge base for relevant information, allowing it to answer customer questions instantly.
+We also connected it to existing Salesforce APIs to handle common tasks like looking up order tracking information or submitting product quality claims, empowering the bot to take actions on behalf of customers without human intervention.
+With Sierra, Casper was able to offer 24/7 customer support for the first time. As a sleep brand, we understand that issues with a mattress often arise at night—and before Sierra, customers had to wait until the next morning to get help.
+## Always Improving
+While cost reduction initially drove us to Sierra, it has proven to be far from the most valuable part of the partnership. Traditional customer service teams face high turnover, meaning we were constantly training new staff only for them to leave a few months later. Sierra, however, only grows smarter over time.
+Our CX leadership team can review conversations handled by Sierra, providing feedback to help the AI improve. Just a few months after launching our initial proof of concept, Sierra is now achieving a 74% resolution rate, meaning 74% of customer inquiries are resolved entirely by the AI agent without human intervention. On top of that, customer satisfaction has increased—we’re seeing over 20% higher CSAT scores compared to our human customer service agents.
+## The Future is Bright
+AI is transforming customer service, and for Casper, this is just the beginning. We’re now working on training Sierra to handle sales chats and even to manage calls with their new voice capabilities.
+While these changes alone may not bring Casper to profitability, they significantly reduce our costs while simultaneously enhancing the customer experience—a truly remarkable win-win.
