@@ -77,7 +77,7 @@ export default function About() {
             <p>Most recently, I was Director of Digital Product at Casper, where I led the rearchitecture of the tech stack handling more than $250M ARR with 75% less resources.</p>
             <p>Before that, I founded and ran a successful agency, scaling it to a team of 8 with a $1M ARR by leading both the sales and solution design processes on more than 60 applications and websites.</p>
             <p>And I started my career at Housing works which was the perfect job right out of school because I got to do all. I started businesses, ran million dollar fundraisers, and built a marketing team to maintain it all.</p>
-            <p>I'm looking for a Solutions Architect role at a SaaS platform company where I can help clients unlock the full potential of their technology and drive real business impact.</p>
+            <p>I&apos;m looking for a Solutions Architect role at a SaaS platform company where I can help clients unlock the full potential of their technology and drive real business impact.</p>
 
           </div>
         </div>
