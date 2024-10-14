@@ -163,6 +163,7 @@ function Newsletter() {
 interface Role {
   company: string
   title: string
+  url: string
   logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
@@ -185,7 +186,7 @@ function Role({ role }: { role: Role }) {
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
         <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
+          <a href={role.url} target="_blank" rel="noopener noreferrer">{role.company}</a>
         </dd>
         <dt className="sr-only">Role</dt>
         <dd className="text-xs text-zinc-500 dark:text-zinc-400">
@@ -211,6 +212,7 @@ function Resume() {
       company: 'Casper',
       title: 'Director of Digital Products',
       logo: logoCasper,
+      url: 'https://casper.com',
       start: '2021',
       end: {
         label: 'Present',
@@ -219,22 +221,25 @@ function Resume() {
     },
     {
       company: 'Happy Cog',
-      title: 'Director of Product Management',
+      title: 'Lead Solution Architect',
       logo: logoHappyCog,
+      url: 'https://happycog.com',
       start: '2019',
       end: '2021',
     },
     {
       company: 'Postlight (now Launch by NTT Data) ',
-      title: 'Senior Technical Product Manager',
+      title: 'Solution Architect',
       logo: logoPostlight,
+      url: 'https://postlight.com',
       start: '2018',
       end: '2019',
     },
     {
       company: 'Familiar (now Reflexions)',
-      title: 'Co-Founder & Engineering Manager',
+      title: 'Co-Founder & Solution Architect',
       logo: logoFamiliar,
+      url: 'https://reflexions.co',
       start: '2011',
       end: '2018',
     },
@@ -242,6 +247,7 @@ function Resume() {
       company: 'Housing Works',
       title: 'Director of Marketing & Engineering',
       logo: logoHousingWorks,
+      url: 'https://housingworks.org',
       start: '2004',
       end: '2011',
     },
@@ -303,18 +309,20 @@ export default async function Home() {
   return (
     <>
       <Container className="mt-9">
-        <div className="max-w-2xl">
+        <div className="max-w-2xl text-left">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Engineering and Product Leader
+            Solution Architect <br /> & Product Leader
           </h1>
-          <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Keith, a <strong>software engineer and product leader</strong>{' '}
-            based in Berkeley, California.
-            <br /> I have a passion for mentoring teams, driving technical
-            excellence, and delivering innovative solutions that solve real
-            problems.
-          </p>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <p className='mb-2'>
+              I’m Keith, a <strong>Solution Architect & Product Manager</strong>{' '}
+              based in Berkeley, California.
+            </p>
+            <p>
+              Most recently, I was Director of Digital Product at <a href="https://casper.com" target="_blank" className='underline' rel="noopener noreferrer">Casper</a>, where I led the rearchitecture of the tech stack handling more than $250M ARR with 75% less resources.
+            </p>
+          </div>
+          <div className="mt-6 flex gap-6 ">
             <SocialLink
               href="https://www.linkedin.com/in/keithmancuso/"
               aria-label="Follow on LinkedIn"
@@ -337,26 +345,25 @@ export default async function Home() {
             />
           </div>
         </div>
-      </Container>
+      </Container >
       {/* <Photos /> */}
-      <Container className="mt-16 md:mt-20">
+      < Container className="mt-16 md:mt-20" >
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
+          <div className="space-y-10 lg:pr-16 xl:pr-24">
+
+            <Resume />
+          </div>
           <div className="mt-6">
-            <h2 className="mb-8 flex gap-2 text-sm font-bold tracking-tight text-zinc-800 dark:text-zinc-100">
-              <SparkleIcon className="h-6 w-6 flex-none" />
-              Tinkering
-            </h2>
+
             <div className="flex flex-col gap-16">
               {articles.map((article) => (
                 <Article key={article.slug} article={article} />
               ))}
             </div>
           </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Resume />
-          </div>
+
         </div>
-      </Container>
+      </Container >
     </>
   )
 }

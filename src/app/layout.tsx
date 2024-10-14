@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Keith Mancuso',
     default:
-      'Keith Mancuso - Engineering and Product Leader',
+      'Keith Mancuso - Solutions Architect and Product Leader',
   },
   description:
     'I’m Keith, a engineer and product leader based in Berkeley, California.  I have a passion for mentoring teams, driving technical excellence, and delivering innovative solutions in software development that align with business goals.',

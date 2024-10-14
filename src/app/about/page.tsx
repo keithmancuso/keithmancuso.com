@@ -69,19 +69,15 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 mb-1">
-            I’m Keith Mancuso.
+            I’m Keith.
           </h1>
-          <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">I am an engineering and product leader based in Berkeley, California.</h2>
+          <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">I am Solutions Architect and Product Manager.</h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-            <p>
-              I&apos;ve led teams of engineers, designers, and researchers to craft experiences that genuinely resonate with users. My journey began in software engineering, where I quickly realized I loved not just the code but the way technology could transform people&apos;s lives—and that&apos;s when my passion for product development truly took off.
-            </p>
-            <p>
-              Most recently, I worked as the Director of Digital Product at Casper, the company that invented the &quot;bed in a box&quot; category. I served as the lead architect and product owner for Casper&apos;s tech stack, managing over $200 million in annual sales across casper.com and 72 retail locations. I mentored a team of four Product Managers, two Designers, 12 Engineers, and four QA engineers, streamlining system architecture and reducing engineering resources by 75% while enhancing system reliability. My work also included deploying generative AI to improve customer service and engineering efficiency, resulting in a 30% reduction in resource allocation. Through continuous conversion rate optimization (CRO) and A/B testing, we boosted mattress conversion rates by 30% and increased Average Order Value (AOV) by 5%.
-            </p>
-            <p>
-              Before Casper, I co-founded Familiar, a design and development studio where I built web apps and marketing sites for a diverse range of clients. As the Director of Engineering, I grew the team to 10 members and delivered over 60 customized websites and applications for prominent non-profit organizations, including Governors Island, Housing Works, and The Posse Foundation. When the time came to move on to other things I led the strategic acquisition of Familiar by Reflexions, ensuring a smooth transition for both the team and our clients.
-            </p>
+
+            <p>Most recently, I was Director of Digital Product at Casper, where I led the rearchitecture of the tech stack handling more than $250M ARR with 75% less resources.</p>
+            <p>Before that, I founded and ran a successful agency, scaling it to a team of 8 with a $1M ARR by leading both the sales and solution design processes on more than 60 applications and websites.</p>
+            <p>And I started my career at Housing works which was the perfect job right out of school because I got to do all. I started businesses, ran million dollar fundraisers, and built a marketing team to maintain it all.</p>
+            <p>I'm looking for a Solutions Architect role at a SaaS platform company where I can help clients unlock the full potential of their technology and drive real business impact.</p>
 
           </div>
         </div>
