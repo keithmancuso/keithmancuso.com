@@ -221,7 +221,7 @@ function Resume() {
     },
     {
       company: 'Happy Cog',
-      title: 'Lead Solution Architect',
+      title: 'Lead Solutions Architect',
       logo: logoHappyCog,
       url: 'https://happycog.com',
       start: '2019',
@@ -229,7 +229,7 @@ function Resume() {
     },
     {
       company: 'Postlight (now Launch by NTT Data) ',
-      title: 'Solution Architect',
+      title: 'Solutions Architect',
       logo: logoPostlight,
       url: 'https://postlight.com',
       start: '2018',
@@ -237,7 +237,7 @@ function Resume() {
     },
     {
       company: 'Familiar (now Reflexions)',
-      title: 'Co-Founder & Solution Architect',
+      title: 'Co-Founder & Solutions Architect',
       logo: logoFamiliar,
       url: 'https://reflexions.co',
       start: '2011',
@@ -311,11 +311,11 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl text-left">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Solution Architect <br /> & Technical Product Manager
+            Solutions Architect <br /> & Technical Product Manager
           </h1>
           <div className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             <p className='mb-2'>
-              I’m Keith, a Solution Architect & Technical Product Manager{' '}
+              I’m Keith, a Solutions Architect & Technical Product Manager{' '}
               based in Berkeley, California.
             </p>
             <p>

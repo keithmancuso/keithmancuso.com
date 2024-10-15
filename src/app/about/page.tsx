@@ -71,12 +71,12 @@ export default function About() {
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100 mb-1">
             I’m Keith.
           </h1>
-          <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">I am Solutions Architect and Technical Product Manager.</h2>
+          <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">I am Solutions Architect <br />& Technical Product Manager.</h2>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
 
             <p>Most recently, I was Director of Digital Product at Casper, where I led the rearchitecture of the tech stack handling more than $250M ARR with 75% less resources.</p>
             <p>Before that, I founded and ran a successful agency, scaling it to a team of 8 with a $1M ARR by leading both the sales and solution design processes on more than 60 applications and websites.</p>
-            <p>And I started my career at Housing works which was the perfect job right out of school because I got to do all. I started businesses, ran million dollar fundraisers, and built a marketing team to maintain it all.</p>
+            <p>And I started my career at Housing Works which was the perfect job right out of school because I got to do all. I started businesses, ran million dollar fundraisers, and built a marketing team from scratch to maintain it all.</p>
             <p>I&apos;m looking for a Solutions Architect role at a SaaS platform company where I can help clients unlock the full potential of their technology and drive real business impact.</p>
 
           </div>
