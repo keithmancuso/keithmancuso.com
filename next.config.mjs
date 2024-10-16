@@ -10,6 +10,16 @@ const nextConfig = {
       '/articles/*': ['./src/app/articles/**/*.mdx'],
     },
   },
+  async redirects() {
+    return [
+    
+      {
+        source: '/tinkering/:slug',
+        destination: '/articles/:slug',
+        permanent: true,
+      }
+    ];
+  },
 }
 
 const withMDX = nextMDX({
