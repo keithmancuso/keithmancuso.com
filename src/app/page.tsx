@@ -221,7 +221,7 @@ function Resume() {
     },
     {
       company: 'Happy Cog',
-      title: 'Lead Solutions Architect',
+      title: 'Director of Product',
       logo: logoHappyCog,
       url: 'https://happycog.com',
       start: '2019',
@@ -229,7 +229,7 @@ function Resume() {
     },
     {
       company: 'Postlight (now Launch by NTT Data) ',
-      title: 'Solutions Architect',
+      title: 'Senior Technical Product Manager',
       logo: logoPostlight,
       url: 'https://postlight.com',
       start: '2018',
@@ -237,7 +237,7 @@ function Resume() {
     },
     {
       company: 'Familiar (now Reflexions)',
-      title: 'Co-Founder & Solutions Architect',
+      title: 'Co-Founder & Engineering Manager',
       logo: logoFamiliar,
       url: 'https://reflexions.co',
       start: '2011',
